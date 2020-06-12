@@ -48,8 +48,8 @@ function renderTable() {
 }
 
 function show_form() {
-  const el = document.getElementById('form')
-  el.classList.add("show");
+  const el =$('#form')
+  el.addClass("show");
 }
 
 function hide_form() {
