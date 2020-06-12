@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div id="root" class="container-fluid my-3">
+    <div class="container p-4">
+      <form>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" />
+          <div class="input-group-btn">
+            <button class="btn btn-primary" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="main">
+      <div id="table" class="table-responsive mx-2">
+        <table id="contact_table" class="table table-striped table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th>#</th>
+              <th>name</th>
+              <th>last name</th>
+              <th>phone</th>
+              <th>email</th>
+              <th>address</th>
+              <th>birthday</th>
+              <th>details</th>
+              <th>action</th>
+            </tr>
+          </thead>
+        </table>
+        <button class="btn btn-primary" onclick="show_form()">Add</button>
+        <button class="btn btn-secondary" onclick="hide_form()">
+          Cancel
+        </button>
+      </div>
+      <div id="form" class="">
+        <form id="contact_form">
+          <div class="form-group">
+            <label for="id_name">ID: </label>
+            <input type="number" name="id" class="form-control" id="id_id" placeholder="id of contact" required />
+          </div>
+
+          <div class="form-group">
+            <label for="id_name">Name: </label>
+            <input type="text" name="name" class="form-control" id="id_name" placeholder="Enter name" required />
+          </div>
+          <div class="form-group">
+            <label for="id_last_name">Last name: </label>
+            <input type="text" class="form-control" name="lastName" id="id_last_name" placeholder="Enter last name" />
+          </div>
+          <div class="form-group">
+            <label for="id_phone">phone: </label>
+            <input type="phone" name="phone" class="form-control" id="id_phone" placeholder="Enter Phone" />
+          </div>
+          <div class="form-group">
+            <label for="id_email">Email: </label>
+            <input type="email" name="email" class="form-control" id="id_email" placeholder="Enter Email" />
+          </div>
+          <div class="form-group">
+            <label for="id_address">address</label>
+            <textarea name="address" class="form-control" id="id_address" placeholder="Enter Address"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="id_birthday">birthday</label>
+            <input type="datetime-local" name="birthday" class="form-control" id="id_birthday"
+              placeholder="Enter birthday" />
+          </div>
+          <div class="form-group">
+            <label for="id_details">details: </label>
+            <input type="text" name="details" class="form-control" id="id_details" placeholder="Enter details" />
+          </div>
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="reset" class="btn btn-primary">Clear</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="./event.js"></script>
+</body>
+
+</html>
